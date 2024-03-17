@@ -1,0 +1,387 @@
+body {
+  margin: 0;
+  background-color: #f0f2f5;
+  padding: 0 20%;
+  font-family: "Pontano Sans", sans-serif;
+}
+body .container {
+  background-color: white;
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
+}
+body .container .header {
+  background-image: url("../back-ground.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: white;
+  padding: 10px 40px 5px 40px;
+}
+body .container .header .text-title {
+  color: #e0e0e0;
+}
+body .container .header .avatar-name, body .container .header .contacts, body .container .header .media-socials, body .container .header .visit-me {
+  flex: 1 0;
+}
+body .container .header .avatar-name .full-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+body .container .header .avatar-name .title {
+  margin: 5px;
+}
+
+.image-container img {
+  width: 80px;
+  height: 80px;
+}
+
+.icons {
+  width: 130px;
+}
+.icons i {
+  padding: 5px;
+  border: 1px solid;
+  width: 20px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.icons a {
+  color: white;
+}
+
+.page-container {
+  position: relative;
+}
+.page-container .page {
+  font-size: 1.5rem;
+  color: black;
+  width: 40px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+.page-container .triangle {
+  position: absolute;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main {
+  padding: 5px 45px;
+  /** ---- Education css ---  */
+  /**-----------Skill section css-------*/
+}
+.main .intro .hello {
+  font-size: 3.5rem;
+  top: -1rem;
+  left: -10px;
+  position: absolute;
+  color: #d08a4a;
+  font-family: "Versatile Outline Bold", serif;
+}
+.main .intro .intro-text {
+  margin-top: 60px;
+  color: #8a8a8a;
+  padding-right: 2rem;
+  text-indent: 1rem;
+}
+.main .specialties .d-flex {
+  margin-top: 0.2rem;
+}
+.main .specialties .item {
+  margin-right: 1rem;
+}
+.main .specialties .item .vertical-line {
+  background-color: #d08a4a;
+  width: 2px;
+  height: 20px;
+  margin: 10px 0;
+}
+.main .specialties .item i {
+  color: #d08a4a;
+  border: solid 2px;
+  padding: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 2rem;
+}
+.main .education .list-container .list-deco, .main .experience .list-container .list-deco {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.main .education .list-container .list-deco .list-dot, .main .experience .list-container .list-deco .list-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #d08a4a;
+  margin: 5px 0;
+}
+.main .education .list-container .list-deco .list-line, .main .experience .list-container .list-deco .list-line {
+  width: 2px;
+  height: 25px;
+  background-color: #f0f2f5;
+}
+.main .bottom .creative-skill .skill-list {
+  padding: 0 20px;
+  margin-top: -10px;
+  font-size: 1rem;
+}
+.main .bottom .creative-skill .skill-list .li {
+  margin: 5px;
+}
+.main .bottom .creative-skill .vertical-text-container {
+  padding: 20px 0 20px 0;
+  width: 20px;
+  position: relative;
+  border-top: solid 1px grey;
+  border-bottom: solid 1px grey;
+}
+.main .bottom .creative-skill .vertical-text-container .vertical-text {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: center;
+  margin-left: -5px;
+  font-size: 12px;
+}
+.main .bottom .creative-skill .vertical-text-container .s-vertical-line-top {
+  position: absolute;
+  height: 15px;
+  width: 1px;
+  background-color: grey;
+  top: 0;
+}
+.main .bottom .creative-skill .vertical-text-container .s-vertical-line-bottom {
+  position: absolute;
+  height: 15px;
+  width: 1px;
+  background-color: grey;
+  bottom: 0;
+}
+.main .bottom .software-skill .software-item {
+  margin: 3px 5px;
+}
+.main .bottom .software-skill .software-item .soft-name {
+  width: 180px;
+}
+.main .bottom .software-skill .software-item .soft-name img {
+  width: 30px;
+  height: 30px;
+}
+.main .bottom .software-skill .software-item .soft-name * {
+  margin-right: 20px;
+}
+.main .bottom .software-skill .software-item .dot-container {
+  margin: 0 10px 0 5px;
+}
+.main .bottom .software-skill .software-item .dot-container .filled-dot {
+  width: 8px;
+  margin: 0 3px;
+  height: 8px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 12px #f8a100;
+}
+.main .bottom .software-skill .software-item .dot-container .empty-dot {
+  width: 8px;
+  margin: 0 3px;
+  height: 8px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 12px #dacfcf;
+}
+.main .interest {
+  padding: 20px;
+  height: 100%;
+}
+.main .interest .hobby-item {
+  border: 4px solid #d08a4a;
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .interest .hobby-item i {
+  font-size: 2rem;
+}
+.main .interest .triple-circle {
+  margin-left: 20px;
+  width: 70px;
+}
+.main .interest .triple-circle .text {
+  top: 17px;
+  left: 10px;
+  position: absolute;
+  font-size: 8px;
+}
+.main .interest .triple-circle .dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  top: -5px;
+  left: 30px;
+  position: absolute;
+}
+.main .interest .triple-circle .dot-1 {
+  top: -5px;
+}
+.main .interest .triple-circle .dot-2 {
+  top: -15px;
+}
+.main .interest .triple-circle .dot-3 {
+  top: -25px;
+}
+.main .interest .triple-circle .circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 4px solid #d08a4a;
+  border-top: 4px solid transparent;
+  border-left: 4px solid transparent;
+  transform: rotate(130deg);
+}
+.main .interest .triple-circle .circle-1 {
+  width: 50px;
+  height: 50px;
+}
+.main .interest .triple-circle .circle-2 {
+  width: 70px;
+  height: 70px;
+  top: -10px;
+  left: -10px;
+  position: absolute;
+  border: 4px solid #d08a4a;
+  border-left: 4px solid transparent;
+}
+.main .interest .triple-circle .circle-2::after {
+  width: 9px;
+  height: 40px;
+  top: -19px;
+  left: 16px;
+  position: absolute;
+  position: absolute;
+  background-color: white;
+  content: "";
+  rotate: 63deg;
+  border-radius: 50%;
+}
+.main .interest .triple-circle .circle-3 {
+  width: 90px;
+  height: 90px;
+  top: -20px;
+  left: -20px;
+  position: absolute;
+  border: 4px solid #d08a4a;
+  border-left: 4px solid transparent;
+}
+
+/**----------------- general css ---------------**/
+.title-container {
+  position: relative;
+}
+.title-container .title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.title-container .underline {
+  width: 150px;
+  height: 1px;
+  width: 150px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 25px;
+  left: -1.4rem;
+}
+
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 3px;
+}
+
+.padding {
+  padding: 10px 20px;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.text-primary {
+  color: #d08a4a;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.warp {
+  flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.f-1 {
+  flex: 1;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-small {
+  font-size: 0.8rem;
+}
+
+.text-secondary {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.style-none {
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */

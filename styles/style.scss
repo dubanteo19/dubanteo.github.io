@@ -1,0 +1,412 @@
+@import "_mixin.scss";
+@import "_variables.scss";
+
+body {
+  margin: 0;
+  background-color: $grey;
+  padding: 0 20%;
+  font-family: "Pontano Sans", sans-serif;
+
+  .container {
+    background-color: $white;
+    @include boxShadow();
+
+    .header {
+      background-image: url("../back-ground.jpg");
+      @include bgNoRepeat();
+      color: $white;
+      padding: 10px 40px 5px 40px;
+
+      .text-title {
+        color: #e0e0e0;
+      }
+
+      .avatar-name, .contacts, .media-socials, .visit-me {
+        @include flex1grow0
+      }
+
+      .avatar-name {
+        .full-name {
+          @include marginVertical(0);
+          font-size: 1.5rem;
+        }
+
+        .title {
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
+
+.image-container img {
+  @include squareSize(80px);
+}
+
+.icons {
+  width: 130px;
+
+  i {
+    padding: 5px;
+    border: 1px solid;
+    width: 20px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    @include boxShadow;
+    cursor: pointer;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+.page-container {
+  position: relative;
+
+  .page {
+    font-size: 1.5rem;
+    color: black;
+    width: 40px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .triangle {
+    position: absolute;
+    background-color: white;
+    @include squareSize(10px);
+    @include triangle;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.main {
+  padding: 5px 45px;
+
+  .intro {
+    .hello {
+      font-size: 3.5rem;
+      @include topLeft(-1rem,-10px);
+      color: $primary-color;
+      font-family: "Versatile Outline Bold", serif;
+    }
+
+    .intro-text {
+      margin-top: 60px;
+      color: $secondary-color;
+      padding-right: 2rem;
+      text-indent: 1rem;
+    }
+  }
+
+  .specialties {
+    .d-flex {
+      margin-top: 0.2rem;
+    }
+
+    .item {
+      margin-right: 1rem;
+
+      .vertical-line {
+        background-color: $primary-color;
+        @include size(2px, 20px);
+        margin: 10px 0;
+      }
+
+      i {
+        color: $primary-color;
+        border: solid 2px;
+        padding: 20px;
+        @include squareSize(30px);
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+
+  }
+
+  /** ---- Education css ---  */
+  .education, .experience {
+    .list-container {
+      .list-deco {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        .list-dot {
+          @include squareSize(6px);
+          border-radius: 50%;
+          background-color: $primary-color;
+          margin: 5px 0;
+        }
+
+        .list-line {
+          @include size(2px, 25px);
+          background-color: $grey;
+        }
+      }
+    }
+  }
+
+  /**-----------Skill section css-------*/
+  .bottom {
+    .creative-skill {
+      .skill-list {
+        padding: 0 20px;
+        margin-top: -10px;
+        font-size: 1rem;
+
+        .li {
+          margin: 5px;
+        }
+      }
+
+      .vertical-text-container {
+        padding: 20px 0 20px 0;
+        width: 20px;
+        position: relative;
+        border-top: solid 1px grey;
+        border-bottom: solid 1px grey;
+
+        .vertical-text {
+          writing-mode: vertical-lr;
+          transform: rotate(180deg);
+          text-align: center;
+          margin-left: -5px;
+          font-size: 12px;
+        }
+
+        .s-vertical-line-top {
+          @include sVerticalLine;
+          top: 0;
+        }
+
+        .s-vertical-line-bottom {
+          @include sVerticalLine;
+          bottom: 0;
+        }
+      }
+
+
+    }
+
+    .software-skill {
+
+      .software-item {
+        margin: 3px 5px;
+
+        .soft-name {
+          width: 180px;
+
+          img {
+            @include squareSize(30px);
+          }
+
+          * {
+            margin-right: 20px;
+          }
+        }
+
+        .dot-container {
+          margin: 0 10px 0 5px;
+
+          .filled-dot {
+            @include dot(#f8a100);
+          }
+
+          .empty-dot {
+            @include dot(#dacfcf);
+          }
+        }
+      }
+    }
+  }
+
+  .interest {
+    padding: 20px;
+    height: 100%;
+
+    .hobby-item {
+      border: 4px solid $primary-color;
+      @include squareSize(70px);
+      margin-right: 10px;
+      flex-direction: column;
+      @include flexCenter;
+
+      i {
+        font-size: 2rem;
+      }
+    }
+
+    .triple-circle {
+      margin-left: 20px;
+      width: 70px;
+
+      .text {
+        @include topLeft(17px, 10px);
+        font-size: 8px;
+      }
+
+      .dot {
+        @include squareSize(8px);
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+        @include topLeft(-5px, 30px);
+      }
+
+      .dot-1 {
+        top: -5px;
+      }
+
+      .dot-2 {
+        top: -15px;
+      }
+
+      .dot-3 {
+        top: -25px;
+      }
+
+      .circle {
+        position: absolute;
+        border-radius: 50%;
+        border: 4px solid $primary-color;
+        border-top: 4px solid transparent;
+        border-left: 4px solid transparent;
+        transform: rotate(130deg);
+      }
+
+      .circle-1 {
+        @include squareSize(50px);
+      }
+
+      .circle-2 {
+        @include squareSize(70px);
+        @include topLeft(-10px, -10px);
+        border: 4px solid $primary-color;
+        border-left: 4px solid transparent;
+      }
+
+      .circle-2::after {
+        @include size(9px, 40px);
+        @include topLeft(-19px, 16px);
+        position: absolute;
+        background-color: white;
+        content: "";
+        rotate: 63deg;
+        border-radius: 50%;
+      }
+
+      .circle-3 {
+        @include squareSize(90px);
+        @include topLeft(-20px, -20px);
+        border: 4px solid $primary-color;
+        border-left: 4px solid transparent;
+      }
+
+    }
+  }
+
+}
+
+/**----------------- general css ---------------**/
+.title-container {
+  position: relative;
+
+  .title {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .underline {
+    width: 150px;
+    height: 1px;
+    @include size(150px, 1px);
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 25px;
+    left: -1.4rem;
+  }
+}
+
+
+.border {
+  @include border;
+}
+
+.padding {
+  padding: 10px 20px;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.warp {
+  flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.f-1 {
+  flex: 1;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-small {
+  font-size: 0.8rem
+}
+
+.text-secondary {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.style-none {
+  list-style: none;
+}

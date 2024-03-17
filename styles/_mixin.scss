@@ -1,0 +1,66 @@
+@mixin boxShadow() {
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+@mixin bgNoRepeat() {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+@mixin flex1grow0() {
+  flex: 1 0;
+}
+
+@mixin marginVertical($size) {
+  margin-top: $size;
+  margin-bottom: $size;
+}
+
+@mixin squareSize($size) {
+  width: $size;
+  height: $size;
+}
+@mixin topLeft($top,$left){
+  top: $top;
+  left: $left;
+  position: absolute;
+}
+@mixin size($width,$height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin triangle() {
+  clip-path: polygon(
+                  0 0,
+                  100% 0,
+                  50% 100%
+  );
+}
+
+@mixin border() {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 3px;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin sVerticalLine() {
+  position: absolute;
+  height: 15px;
+  width: 1px;
+  background-color: grey;
+}
+
+@mixin dot($color) {
+  width: 8px;
+  margin: 0 3px;
+  height: 8px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 12px $color;
+}
